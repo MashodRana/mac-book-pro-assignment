@@ -14,7 +14,6 @@ let totalCost = 0;
 let isPromoUsed = false;
 const promoCode = 'stevekaku';
 
-console.log("hello I am javascript ")
 
 // -------------------------------------------------------
 //                  Helper functions
