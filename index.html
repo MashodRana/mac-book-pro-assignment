@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +14,93 @@
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
-<body>
 
-    <!-- custom JavaScript  -->
+<body>
+    <main>
+        <section class="container product border mx-auto my-16 p-2 md:p-6">
+            <div class="grid md:grid-cols-5">
+                <div class="product-image md:col-span-2 border-b-2">
+                    <img src="/images/mac.png" alt="">
+                </div>
+
+                <div class="product-details md:col-span-3 border-b-2 lg:pl-16 md:pl-8">
+                    <article class="product-desc py-6 md:pb-6 md:pt-0 ">
+                        <h1 class="product-title text-5xl pb-6  ">
+                            Customize your Blue 24-inch iMac with Apple M1 chip.
+                        </h1>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium illo officiis, natus
+                            aliquam ut reiciendis quos debitis, quibusdam harum consectetur totam! Neque a quos
+                            voluptatibus earum dolor doloribus, inventore eaque.
+                        </p>
+                    </article>
+
+                    <div class="product-customization py-3">
+                        <div class="product-component pb-6">
+                            <h2 class="text-xl font-semibold pb-2">Memory</h2>
+                            <button class="specification-button" id="8gb-memory">8GB unified memory</button>
+                            <button class="specification-button" id="16gb-memory">16GB unified memory</button>
+                        </div>
+                        <div class="product-component pb-6">
+                            <h2 class="text-xl font-semibold pb-2">Storage</h2>
+                            <button class="specification-button" id="256gb-ssd">256GB SSD storage</button>
+                            <button class="specification-button" id="512gb-ssd">512GB SSD storage</button>
+                            <button class="specification-button" id="1tb-ssd">1TB SSD storage</button>
+                        </div>
+                        <div class="product-component pb-6">
+                            <h2 class="text-xl font-semibold pb-2">Chose your delivery option</h2>
+                            <button class="specification-button" id="free-delivery">Friday, Aug 25 FREE Prime Delivery</button>
+                            <button class="specification-button" id="premium-delivery">Friday, Aug 21 Delivery charge $20</button>
+
+                        </div>
+                    </div>
+
+                    <!-- Product cost -->
+                    <div class="product-cost">
+                        <div class="grid grid-rows-2 grid-cols-2 md:w-1/2 font-semibold">
+                            <div class="cost-title border-b-2 py-2">Best Price</div>
+                            <div class="cost-amount border-b-2 py-2 text-right">$<span id="main-cost">1299</span></div>
+
+                            <div class="cost-title border-b-2 py-2">Extra Memory Cost</div>
+                            <div class="cost-amount border-b-2 py-2 text-right">$<span id="memory-cost">0</span></div>
+
+                            <div class="cost-title border-b-2 py-2">Extra Storage Cost</div>
+                            <div class="cost-amount border-b-2 py-2 text-right">$<span id="storage-cost">0</span></div>
+
+                            <div class="cost-title border-b-2 border-gray-400 py-2">Delivery Charge</div>
+                            <div class="cost-amount border-b-2 border-gray-400 py-2 text-right">$<span
+                                    id="delivery-cost">0</span>
+                            </div>
+
+                            <div class="cost-title border-b-2  py-2">Total Price</div>
+                            <div class="cost-amount border-b-2 py-2 text-right">$<span id="total-cost">1299</span></div>
+
+                        </div>
+
+                        <!-- Apply promo code -->
+                        <div class="promo-code py-2 md:w-1/2">
+                            <p class="font-normal py-2">Add promo code</p>
+                            <input class="inline-block rounded p-2 border m-0 w-2/3" type="text" name=""
+                                id="promo-field">
+                            <button class="inline-block rounded p-2 m-0 bg-pink-600 text-white"
+                                id="promo-button">Apply</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="md:col-span-5 py-6">
+                    <h1 class="text-4xl text-semibold text-center">
+                        Total: $<span id="final-cost">0</span>
+                    </h1>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Custom JavaScript file -->
     <script src="js/javascript.js"></script>
 </body>
+
 </html>

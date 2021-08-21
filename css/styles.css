@@ -1,0 +1,14 @@
+/* product details styles */
+
+.specification-button{
+    border: 1px solid black; 
+    border-radius: 7px;
+    padding: 5px;
+    margin-right: 16px;
+
+}
+
+.specification-button:hover{
+    background-color: black;
+    color: white;
+}
